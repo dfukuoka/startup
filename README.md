@@ -36,7 +36,7 @@ The Flight Information Dashboard is an advanced application that empowers users 
 ## Designs and Diagram
 
 ### Login Page
-![Login](/ReadMeImage/Login.png)
+![Login](/)
 
 ### Flight Selection Page
 ![FlightSelection](/ReadMeImage/FlightSelect.png)
