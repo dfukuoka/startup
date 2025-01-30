@@ -5,6 +5,13 @@ body {
     position: relative;
 }
 
+.col {
+    float: left;
+    width: 50%;
+    margin: auto;
+    padding: 0 50px;
+    margin-top: 6px;
+}
 .container {
     position: relative;
     display: flex;
