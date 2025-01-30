@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Flight Animation</title>
+    <link rel="stylesheet" href="/frontend/styles/login.css">
+</head>
+<body>
+
+    <svg baseProfile="tiny" fill="#a1a1a1" height="857" stroke="black" stroke-linecap="round" stroke-linejoin="round" 
+        stroke-width=".2" version="1.2" viewBox="0 0 2000 857" width="2000" xmlns="http://www.w3.org/2000/svg">
+        
+        <!-- Background World Map -->
+        <image xlink:href="/frontend/assets/images/world.svg" width="2000" height="857"/>
+
+        <!-- Flight Paths for Major Airports (3 per Continent, 10 Flights Each) -->
+        <g id="flightPaths">
+
+            <!-- North America (JFK, LAX, YYZ) -->
+
+             <!-- LAX-->
+            <path id="flightPath1" d="M345,280 Q600,-50 980,170" fill="transparent" stroke="gray" stroke-dasharray="10,6" stroke-width="2"/> <!-- LHR-->
+            <path id="flightPath2" d="M345,280 Q600,-20 1000,200" fill="transparent" stroke="gray" stroke-dasharray="10,6" stroke-width="2"/> <!-- CDG-->
+            <path id="flightPath3" d="M345,280 Q600,300 750,650" fill="transparent" stroke="gray" stroke-dasharray="10,6" stroke-width="2"/> <!-- GRU-->
+            <!-- ORD-->
+            <path id="flightPath4" d="M600,240 Q480,150 345,280" fill="transparent" stroke="gray" stroke-dasharray="10,6" stroke-width="2"/> <!-- LAX-->
+            <path id="flightPath5" d="M600,240 Q480,200 440,385" fill="transparent" stroke="gray" stroke-dasharray="10,6" stroke-width="2"/> <!-- MEX-->
+            <path id="flightPath6" d="M600,240 Q600,300 750,650" fill="transparent" stroke="gray" stroke-dasharray="10,6" stroke-width="2"/> <!-- FRU-->
+            <path id="flightPath7" d="M600,240 Q800,100 1040,190" fill="transparent" stroke="gray" stroke-dasharray="10,6" stroke-width="2"/> <!-- FRA-->
+
+            <!-- Europe (LHR, CDG, FRA) -->
+
+            <!-- LHR -->
+            <path id="flightPath8" d="M980,170 Q750,300 750,650" fill="transparent" stroke="gray" stroke-dasharray="10,6" stroke-width="2"/>
+            <path id="flightPath12" d="M1020,230 Q1400,500 1700,250" fill="transparent" stroke="black" stroke-dasharray="5,5"/>
+            <path id="flightPath9" d="M1040,260 Q1500,600 1800,450" fill="transparent" stroke="black" stroke-dasharray="5,5"/>
+
+            <!-- South America (GRU, EZE, BOG) -->
+            <path id="flightPath4" d="M700,600 Q1100,400 1500,500" fill="transparent" stroke="black" stroke-dasharray="5,5"/>
+            <path id="flightPath5" d="M720,620 Q1300,500 1600,580" fill="transparent" stroke="black" stroke-dasharray="5,5"/>
+            <path id="flightPath6" d="M750,650 Q1200,700 1700,650" fill="transparent" stroke="black" stroke-dasharray="5,5"/>
+
+            <!-- Africa (JNB, CAI, LOS) -->
+            <path id="flightPath10" d="M1100,700 Q1300,600 1600,550" fill="transparent" stroke="black" stroke-dasharray="5,5"/>
+            <path id="flightPath11" d="M1120,730 Q1400,800 1700,700" fill="transparent" stroke="black" stroke-dasharray="5,5"/>
+            <path id="flightPath12" d="M1140,750 Q1500,850 1800,780" fill="transparent" stroke="black" stroke-dasharray="5,5"/>
+
+            <!-- Asia (HND, PEK, DXB) -->
+            <path id="flightPath13" d="M1600,250 Q1800,350 1900,300" fill="transparent" stroke="black" stroke-dasharray="5,5"/>
+            <path id="flightPath14" d="M1620,280 Q1900,450 2000,320" fill="transparent" stroke="black" stroke-dasharray="5,5"/>
+            <path id="flightPath15" d="M1650,310 Q1950,500 2100,400" fill="transparent" stroke="black" stroke-dasharray="5,5"/>
+
+            <!-- Oceania (SYD, AKL, MEL) -->
+            <path id="flightPath16" d="M1700,750 Q1800,850 2000,780" fill="transparent" stroke="black" stroke-dasharray="5,5"/>
+            <path id="flightPath17" d="M1720,770 Q1850,900 2100,820" fill="transparent" stroke="black" stroke-dasharray="5,5"/>
+            <path id="flightPath18" d="M1750,800 Q1900,950 2200,900" fill="transparent" stroke="black" stroke-dasharray="5,5"/>
+        </g>
+
+        <!-- Airplane Icons -->
+        <g id="airplanes">
+            <g class="airplane">
+                <text x="0" y="10" font-size="30" fill="black">&#9992;</text>
+                <animateMotion dur="60s" repeatCount="indefinite" rotate="auto" begin="4s">
+                    <mpath xlink:href="#flightPath1"/>
+                </animateMotion>
+            </g>
+            <g class="airplane">
+                <text x="0" y="10" font-size="30" fill="black">&#9992;</text>
+                <animateMotion dur="60s" repeatCount="indefinite" rotate="auto">
+                    <mpath xlink:href="#flightPath2"/>
+                </animateMotion>
+            </g>
+            <g class="airplane">
+                <text x="0" y="10" font-size="30" fill="black">&#9992;</text>
+                <animateMotion dur="60s" repeatCount="indefinite" rotate="auto" begin="2s">
+                    <mpath xlink:href="#flightPath3"/>
+                </animateMotion>
+            </g>
+            <g class="airplane">
+                <text x="0" y="10" font-size="30" fill="black">&#9992;</text>
+                <animateMotion dur="60s" repeatCount="indefinite" rotate="auto" begin="5s">
+                    <mpath xlink:href="#flightPath4"/>
+                </animateMotion>
+            </g>
+            <g class="airplane">
+                <text x="0" y="10" font-size="30" fill="black">&#9992;</text>
+                <animateMotion dur="60s" repeatCount="indefinite" rotate="auto">
+                    <mpath xlink:href="#flightPath5"/>
+                </animateMotion>
+            </g>            <g class="airplane">
+                <text x="0" y="10" font-size="30" fill="black">&#9992;</text>
+                <animateMotion dur="60s" repeatCount="indefinite" rotate="auto" begin="4s">
+                    <mpath xlink:href="#flightPath6"/>
+                </animateMotion>
+            </g>            <g class="airplane">
+                <text x="0" y="10" font-size="30" fill="black">&#9992;</text>
+                <animateMotion dur="60s" repeatCount="indefinite" rotate="auto" begin="2s">
+                    <mpath xlink:href="#flightPath7"/>
+                </animateMotion>
+            </g>            <g class="airplane">
+                <text x="0" y="10" font-size="30" fill="black">&#9992;</text>
+                <animateMotion dur="60s" repeatCount="indefinite" rotate="auto">
+                    <mpath xlink:href="#flightPath8"/>
+                </animateMotion>
+            </g>
+        </g>
+
+    </svg>
+
+</body>
+</html>
