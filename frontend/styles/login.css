@@ -6,24 +6,33 @@ body {
 }
 
 .col {
-    float: left;
-    width: 50%;
-    margin: auto;
-    padding: 0 50px;
-    margin-top: 6px;
-}
+    justify-content: center;
+    }
+
 .container {
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    padding: 50% 50%;
+}
+
+
+.row {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .svg-container {
     position: relative;
     width: 800px;  /* Adjust width as needed */
     height: 600px; /* Adjust height as needed */
+}
+
+.field {
+    border-radius: 5%;
+    border-color: lightgray;
+
 }
 
 .square {

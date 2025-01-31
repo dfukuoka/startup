@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
     <title>SVG Flight Animation</title>
     <link rel="stylesheet" href="/frontend/styles/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -271,9 +273,12 @@
     </svg>
 
     <div class="square">
-        <div class="col">
-            <input type="text" name="username" placeholder="Username" required>
-            <input type="text" name="password" placeholder="Password" required>
+        <div class="container">
+            <div class="col">
+                <input class="field" type="text" name="username" placeholder="Username" required>
+                <input class="field" type="password" name="password" placeholder="Password" required>
+            </div>
+            <div id="my-signin2"></div>
         </div>
     </div>
 
