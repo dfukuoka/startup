@@ -27,8 +27,9 @@ body {
 
 
 .row {
-    content: "";
-    display: table;
+    display: flex;
+    flex-direction:column;
+    gap: 7px;
     clear: both;
 }
 
