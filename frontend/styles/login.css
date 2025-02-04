@@ -6,14 +6,23 @@ body {
 }
 
 .col {
+    align-items: center;
+    width: 110%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 10px;
     }
 
 .container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    padding: 50% 50%;
+    padding: 0.01em 16px;
+}
+
+#loginrightnav {
+    position:relative;
+    justify-items: center;
+    align-items: center;
 }
 
 
@@ -30,27 +39,36 @@ body {
 }
 
 .field {
-    border-radius: 5%;
-    border-color: lightgray;
+    width: 200%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 
 }
 
 .square {
-    position: fixed;
     width: 30%;  /* Adjust size */
     height: 100%;
+    margin: 0%;
     background-color: whitesmoke;
-    top: 0px;  /* Adjust distance from top */
-    right: 0px; /* Adjust distance from right */
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px 0 10px rgba(0,0,0,0.1);
+    z-index: 2;
 }
 
-#tooltip {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
-    display: none;
-    font-size: 14px;
-    z-index: 1000;
+#loginrightnav {
+    width: 30%;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+
+#my-signin2 {
+    margin-top: 15px;
 }
