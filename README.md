@@ -203,13 +203,13 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [ ] **HTML pages** - I did not complete this part of the deliverable.
-- [ ] **Proper HTML element usage** - I did not complete this part of the deliverable.
-- [ ] **Links** - I did not complete this part of the deliverable.
-- [ ] **Text** - I did not complete this part of the deliverable.
-- [ ] **3rd party API placeholder** - I did not complete this part of the deliverable.
-- [ ] **Images** - I did not complete this part of the deliverable.
-- [ ] **Login placeholder** - I did not complete this part of the deliverable.
+- [x] **HTML pages** - Created a structured HTML page containing login functionality, flight selection, and a flight details panel.
+- [x] **Proper HTML element usage** -  Used semantic elements such as <header>, <section>, <div>, <button>, and <input> properly.
+- [x] **Links** -  Included links to stylesheets and scripts, though no external page navigation links were added.
+- [x] **Text** - Added necessary text elements for flight information, login forms, and UI components.
+- [x] **3rd party API placeholder** - Placeholder for Google Sign-In API (meta name="google-signin-client_id" included).
+- [x] **Images** - Integrated airline logos dynamically into flight cards.
+- [x] **Login placeholder** - Implemented a basic login form (<input> fields for username and password).
 - [ ] **DB data placeholder** - I did not complete this part of the deliverable.
 - [ ] **WebSocket placeholder** - I did not complete this part of the deliverable.
 
@@ -217,12 +217,15 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 
 For this deliverable I did the following. I checked the box `[x]` and added a description for things I completed.
 
-- [ ] **Header, footer, and main content body** - I did not complete this part of the deliverable.
-- [ ] **Navigation elements** - I did not complete this part of the deliverable.
-- [ ] **Responsive to window resizing** - I did not complete this part of the deliverable.
-- [ ] **Application elements** - I did not complete this part of the deliverable.
-- [ ] **Application text content** - I did not complete this part of the deliverable.
-- [ ] **Application images** - I did not complete this part of the deliverable.
+- [x] **Header, footer, and main content body** - Header, footer, and main content body - Designed a structured UI with a main content area, right-side login panel, and a bottom flight details panel.
+- [x] **Navigation elements** - Structured elements allow users to log in, select flights, and view details in an interactive manner.
+- [x] **Responsive to window resizing** - Implemented flexbox-based layouts, min-width/max-width restrictions, and viewport-based sizing to support various screen sizes.
+- [x] **Application elements** - Designed interactive UI elements, including:
+  - A right-side login panel that minimizes.
+  - A flight details panel that slides up.
+  - Flight selection cards with airline logos.
+- [x] **Application text content** - Styled and structured headings, buttons, and form fields for usability.
+- [x] **Application images** - Integrated SVG flight map background and airline logos into flight selection.
 
 ## 🚀 React part 1: Routing deliverable
 
