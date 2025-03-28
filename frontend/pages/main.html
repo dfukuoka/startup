@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Marker</title>
+    <!-- Load Google Maps API -->
+    <script src="../modules/DisableMapUI.js"></script> <!-- Google Map UI Manual Controls -->
+    <script async 
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQU6ZcTOaBJ7g0m-RefWcUeAGagNQ4XTM&callback=initMap">
+    </script>
+
+    <style>
+      /* Ensure the map container takes full height */
+      #map {
+        height: 100vh; /* Full height of the viewport */
+        width: 100%; /* Full width */
+      }
+
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div> <!-- This is where the map will load -->
+  </body>
+</html>
