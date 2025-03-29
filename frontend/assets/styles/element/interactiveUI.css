@@ -1,0 +1,27 @@
+#field {
+    display: flex;
+    width: 40%;
+    height: 10px;
+    padding: 15px;
+    margin: 5px;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    color: gray;
+    background: linear-gradient(180deg, rgba(211, 211, 211, 0.952) 0%, rgb(187, 187, 187) 100%);
+}
+
+#button {
+    display: flex;
+    width: 40%;
+    height: 40px;
+    padding: 15px;
+    margin: 5px;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    color: gray;
+    background: linear-gradient(180deg, rgba(65, 65, 65, 0.952) 0%, rgb(36, 36, 36) 100%);
+}

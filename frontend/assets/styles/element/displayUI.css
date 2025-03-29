@@ -1,0 +1,33 @@
+#bottomBar {
+  height: 40%;
+  width: 100%;
+  background-color: red;
+  display: flex;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  bottom: 0%;
+  background: linear-gradient(180deg, rgba(134, 134, 134, 0) 0%, rgba(100, 100, 100, 1) 100%);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.978540897369385px);
+}
+
+#fieldContainer {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#map {
+    height: 100vh; /* Full height of the viewport */
+    width: 100%; /* Full width */
+    position: relative;
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
